@@ -7,9 +7,9 @@ export const BoxState = {
 
 export default function Game() {
   return (
-    <>
+    <div className="h-screen">
         <h1>game</h1>
-        <GameBox/>
-    </>
+        <GameBox cat={false}/>
+    </div>
   );
 }

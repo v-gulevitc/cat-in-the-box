@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
+import Difficulty from "~/components/difficulty";
 import Game from "~/components/game";
+import Preview from "~/components/preview";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,9 +12,10 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <>
-    <h1 className="header_intro">Кот в коробке</h1>
-    <Game/>
-    </>
-  );
+		<>
+			<Preview />
+			<Difficulty />
+			<Game />
+		</>
+	)
 }
